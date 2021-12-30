@@ -15,7 +15,7 @@ export default function UserSearch() {
                     console.log(new_users)
                     return new_users
                 })} 
-            type="text">
+            type="text" autoFocus>
             </input>
             <NamesContainer names={users}></NamesContainer>
         </div>
