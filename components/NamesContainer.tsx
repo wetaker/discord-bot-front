@@ -6,7 +6,7 @@ export default function NamesContainer({ names }) {
     <ul className={styles.container}>
       {names.map((name: string) => {
         return (
-          <Link key={name} href={`/users/${name}`}>
+          <Link key={name} href={`/users/${name.replace('#', '%23')}`}>
             {name}
           </Link>
         );

@@ -29,7 +29,7 @@ export default function BarGraph() { // Data = [(tag,height)]
             <div className={styles.graphic_container}>
                 <div className={styles.entry_container}>
                     {data.map(([tag,y], i) => {
-                     return <a href={`users/tagNAME`} key={i} style={{height:"50px", width:`${y/maxDuration*100}%`, margin:"0px", display: "flex",
+                     return <a href={`users/${tag.replace('#', '%23')}`} key={i} style={{height:"50px", width:`${y/maxDuration*100}%`, margin:"0px", display: "flex",
                      alignItems:"center", justifyContent:"flex-end", backgroundColor:selectColor()}}>{y}</a>
                     })}
 
