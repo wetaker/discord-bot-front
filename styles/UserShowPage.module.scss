@@ -1,0 +1,10 @@
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr minmax(400px, 8fr) 1fr;
+  > * {
+    grid-column: 2 / 3;
+  }
+  width: 100%;
+}

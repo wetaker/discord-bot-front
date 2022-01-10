@@ -1,0 +1,20 @@
+
+
+.main_container {
+  display: flex;
+
+  > main {
+    flex-grow: 1;
+    background-color: rgb(118, 189, 199)
+  }
+   
+  > * {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .main_container {
+    flex-direction: column;
+  }
+}

@@ -32,7 +32,7 @@ export default function UserSearch() {
           })
         }
         type="text"
-        autoFocus
+        autoFocus={true}
       ></input>
       <NamesContainer names={filteredUsers}></NamesContainer>
     </div>

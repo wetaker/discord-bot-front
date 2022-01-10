@@ -1,0 +1,14 @@
+
+.container {
+  display: grid;
+  background-color: black;
+  grid-template-rows: 1fr auto;
+  gap: 0px;
+  align-items: flex-end;
+  justify-items: center;
+}
+
+.channel {
+  grid-row-start: 2;
+  color: white;
+}
